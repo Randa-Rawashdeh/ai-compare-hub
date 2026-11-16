@@ -7,6 +7,22 @@
     "key_feature": "Prompt-to-slide deck and interactive web page generator",
     "affiliate_url": "https://YOUR_LINK_GAMMA"
   },
+  (
+    "name": "ElevenLabs",
+    "category": "AI Voice & Audio",
+    "price": "$5/mo",
+    "best_for": "Content creators, podcasters & video editors",
+    "key_feature": "Ultra-realistic AI text-to-speech, voice cloning, and dubbing",
+    "affiliate_url": "https://try.elevenlabs.io/41c7vcbck1sy"
+  },
+  {
+    "name": "Chatbase",
+    "category": "AI Chatbots & Support",
+    "price": "$19/mo",
+    "best_for": "Website owners & customer support teams",
+    "key_feature": "Custom GPT chatbot trained on your website data in minutes",
+    "affiliate_url": "https://link.chatbase.co/randa-rawashdeh"
+  },
   {
     "name": "AdCreative.ai",
     "category": "AI Design & Presentations",
