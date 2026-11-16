@@ -1,7 +1,6 @@
 import os
 import json
 from google import genai
-from google.genai.errors import APIError
 
 def load_products():
     with open('products.json', 'r') as f:
@@ -14,11 +13,10 @@ def generate_comparison_data(p1, p2):
             client = genai.Client(api_key=api_key)
             prompt = f"Compare {p1['name']} and {p2['name']} for an AI software comparison site. Return JSON with keys: 'verdict', 'p1_pros' (list), 'p2_pros' (list)."
             response = client.models.generate_content(model='gemini-1.5-flash', contents=prompt)
-            # If successful, use text or fallback
         except Exception as e:
-            print(f"API notice (using fallback): {e}")
+            print(f"API 503/Network notice (using fallback): {e}")
 
-    # Bulletproof fallback data so builds never fail
+    # Bulletproof fallback data ensuring the build never fails on API spikes
     return {
         "verdict": f"Both {p1['name']} and {p2['name']} offer top-tier capabilities in their respective categories. Choose {p1['name']} for {p1['best_for'].lower()}, or {p2['name']} for {p2['best_for'].lower()}.",
         "p1_pros": [p1['key_feature'], f"Affordable pricing starting at {p1['price']}", f"Ideal for {p1['best_for']}"],
@@ -29,10 +27,8 @@ def main():
     products = load_products()
     os.makedirs('docs', exist_ok=True)
     
-    # Pinterest verification tag integration
     p_meta = '<meta name="p:domain_verify" content="20bc35d9ec4/ec1cf41b51b0889d363eb"/>'
 
-    # Generate Index Page
     products_html = ""
     for p in products:
         products_html += f"""
