@@ -11,7 +11,7 @@ from google.genai import types
 GITHUB_USERNAME = "Randa-Rawashdeh"  # <-- REPLACE WITH YOUR GITHUB USERNAME
 REPO_NAME = "ai-compare-hub"
 BASE_URL = f"https://{GITHUB_USERNAME}.github.io/{REPO_NAME}"
-MODEL_ID = "gemini-2.5-flash"
+MODEL_ID = "gemini-3.8-flash"
 
 client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
