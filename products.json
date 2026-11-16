@@ -1,133 +1,5 @@
 [
   {
-    "name": "Jasper",
-    "category": "AI Writing & Marketing",
-    "price": "$49/mo",
-    "best_for": "Enterprise & agency marketing teams",
-    "key_feature": "Brand voice memory and multi-channel campaign workflows",
-    "affiliate_url": "https://YOUR_LINK_JASPER"
-  },
-  {
-    "name": "Copy.ai",
-    "category": "AI Writing & Marketing",
-    "price": "$49/mo",
-    "best_for": "Go-to-market & sales automation",
-    "key_feature": "Automated GTM workflow pipelines and lead enrichment",
-    "affiliate_url": "https://YOUR_LINK_COPYAI"
-  },
-  {
-    "name": "Writesonic",
-    "category": "AI Writing & Marketing",
-    "price": "$20/mo",
-    "best_for": "SEO blog writers & solo marketers",
-    "key_feature": "Real-time Google search data integration and SEO optimizer",
-    "affiliate_url": "https://YOUR_LINK_WRITESONIC"
-  },
-  {
-    "name": "Surfer SEO",
-    "category": "AI Writing & Marketing",
-    "price": "$99/mo",
-    "best_for": "Content agencies & affiliate publishers",
-    "key_feature": "SERP analyzer and real-time NLP content scoring",
-    "affiliate_url": "https://YOUR_LINK_SURFERSEO"
-  },
-  {
-    "name": "Synthesia",
-    "category": "AI Video & Avatars",
-    "price": "$29/mo",
-    "best_for": "Corporate training & L&D teams",
-    "key_feature": "160+ photorealistic AI avatars with 140+ language dubbing",
-    "affiliate_url": "https://YOUR_LINK_SYNTHESIA"
-  },
-  {
-    "name": "HeyGen",
-    "category": "AI Video & Avatars",
-    "price": "$29/mo",
-    "best_for": "Social media ads & personalized outreach",
-    "key_feature": "Instant custom avatar cloning and lip-sync video translation",
-    "affiliate_url": "https://YOUR_LINK_HEYGEN"
-  },
-  {
-    "name": "Pictory",
-    "category": "AI Video & Avatars",
-    "price": "$25/mo",
-    "best_for": "YouTube automation & faceless channels",
-    "key_feature": "One-click blog-to-video script and stock footage assembly",
-    "affiliate_url": "https://YOUR_LINK_PICTORY"
-  },
-  {
-    "name": "OpusClip",
-    "category": "AI Video & Avatars",
-    "price": "$15/mo",
-    "best_for": "Podcasters & short-form creators",
-    "key_feature": "AI virality score and automated vertical reframing with captions",
-    "affiliate_url": "https://YOUR_LINK_OPUSCLIP"
-  },
-  {
-    "name": "Runway",
-    "category": "AI Video & Avatars",
-    "price": "$15/mo",
-    "best_for": "Filmmakers & creative directors",
-    "key_feature": "Gen-3 Alpha text-to-video and motion brush editing",
-    "affiliate_url": "https://YOUR_LINK_RUNWAY"
-  },
-  {
-    "name": "ElevenLabs",
-    "category": "AI Audio & Voice",
-    "price": "$5/mo",
-    "best_for": "Audiobook creators & game developers",
-    "key_feature": "Ultra-realistic emotional voice synthesis and instant voice cloning",
-    "affiliate_url": "https://YOUR_LINK_ELEVENLABS"
-  },
-  {
-    "name": "Descript",
-    "category": "AI Audio & Voice",
-    "price": "$24/mo",
-    "best_for": "Video editors & podcasters",
-    "key_feature": "Edit video and audio by deleting words in a text transcript",
-    "affiliate_url": "https://YOUR_LINK_DESCRIPT"
-  },
-  {
-    "name": "CustomGPT",
-    "category": "AI Chatbots & Agents",
-    "price": "$99/mo",
-    "best_for": "Businesses needing anti-hallucination support bots",
-    "key_feature": "Zero-hallucination RAG bots trained strictly on company sitemaps/docs",
-    "affiliate_url": "https://YOUR_LINK_CUSTOMGPT"
-  },
-  {
-    "name": "Chatbase",
-    "category": "AI Chatbots & Agents",
-    "price": "$19/mo",
-    "best_for": "Small businesses & SaaS startups",
-    "key_feature": "5-minute embeddable website chatbot with lead capture",
-    "affiliate_url": "https://YOUR_LINK_CHATBASE"
-  },
-  {
-    "name": "Make.com",
-    "category": "AI Automation & Productivity",
-    "price": "$9/mo",
-    "best_for": "Operations & no-code automation builders",
-    "key_feature": "Visual drag-and-drop API router with native AI agent modules",
-    "affiliate_url": "https://YOUR_LINK_MAKE"
-  },
-  {
-    "name": "ClickUp",
-    "category": "AI Automation & Productivity",
-    "price": "$10/mo",
-    "best_for": "Cross-functional project management",
-    "key_feature": "ClickUp Brain connecting tasks, docs, and automated standups",
-    "affiliate_url": "https://YOUR_LINK_CLICKUP"
-  },
-  {
-    "name": "Notion AI",
-    "category": "AI Automation & Productivity",
-    "price": "$10/mo",
-    "best_for": "Knowledge bases & solo operators",
-    "key_feature": "Workspace-wide Q&A and automated database property autofill",
-    "affiliate_url": "https://YOUR_LINK_NOTION"
-  },
-  {
     "name": "Gamma",
     "category": "AI Design & Presentations",
     "price": "$10/mo",
@@ -136,27 +8,75 @@
     "affiliate_url": "https://YOUR_LINK_GAMMA"
   },
   {
-    "name": "Midjourney",
+    "name": "AdCreative.ai",
     "category": "AI Design & Presentations",
-    "price": "$10/mo",
-    "best_for": "Brand designers & concept artists",
-    "key_feature": "Industry-leading photorealism and consistent style references",
-    "affiliate_url": "https://YOUR_LINK_MIDJOURNEY"
+    "price": "$29/mo",
+    "best_for": "Performance marketers & e-commerce brands",
+    "key_feature": "Conversion-scored AI ad banners and social creatives",
+    "affiliate_url": "https://YOUR_LINK_ADCREATIVE"
   },
   {
-    "name": "Perplexity Pro",
-    "category": "AI Research & Assistants",
-    "price": "$20/mo",
-    "best_for": "Researchers & analysts",
-    "key_feature": "Live cited web research with multi-model switching",
-    "affiliate_url": "https://YOUR_LINK_PERPLEXITY"
+    "name": "Surfer SEO",
+    "category": "AI SEO & Content",
+    "price": "$99/mo",
+    "best_for": "Content agencies & affiliate publishers",
+    "key_feature": "SERP analyzer, AI visibility tracking, and NLP content scoring",
+    "affiliate_url": "https://YOUR_LINK_SURFER"
   },
   {
-    "name": "Claude Pro",
-    "category": "AI Research & Assistants",
-    "price": "$20/mo",
-    "best_for": "Developers & long-form writers",
-    "key_feature": "200K context window, Projects knowledge base, and Artifacts",
-    "affiliate_url": "https://YOUR_LINK_CLAUDE"
+    "name": "Browse AI",
+    "category": "AI Automation & Scraping",
+    "price": "$48/mo",
+    "best_for": "Operations & market research teams",
+    "key_feature": "No-code AI web scraping and competitor monitoring robots",
+    "affiliate_url": "https://YOUR_LINK_BROWSEAI"
+  },
+  {
+    "name": "Instantly",
+    "category": "AI Sales & Outreach",
+    "price": "$37/mo",
+    "best_for": "B2B agencies & outbound sales teams",
+    "key_feature": "Unlimited email warmup and AI-personalized cold outreach",
+    "affiliate_url": "https://YOUR_LINK_INSTANTLY"
+  },
+  {
+    "name": "SocialBee",
+    "category": "AI Social Media Management",
+    "price": "$29/mo",
+    "best_for": "Solopreneurs & social media managers",
+    "key_feature": "AI post generator with evergreen content recycling queues",
+    "affiliate_url": "https://YOUR_LINK_SOCIALBEE"
+  },
+  {
+    "name": "Kit",
+    "category": "Email & Creator Marketing",
+    "price": "$29/mo",
+    "best_for": "Newsletter creators & digital product sellers",
+    "key_feature": "Visual email automation sequences and paid newsletter engine",
+    "affiliate_url": "https://YOUR_LINK_KIT"
+  },
+  {
+    "name": "Brevo",
+    "category": "Email & Creator Marketing",
+    "price": "$9/mo",
+    "best_for": "SMBs needing email, SMS, and CRM in one",
+    "key_feature": "AI send-time optimization and multi-channel CRM workflows",
+    "affiliate_url": "https://YOUR_LINK_BREVO"
+  },
+  {
+    "name": "ActiveCampaign",
+    "category": "Email & Creator Marketing",
+    "price": "$15/mo",
+    "best_for": "E-commerce & B2B marketing automation",
+    "key_feature": "Autonomous AI marketing journeys and predictive lead scoring",
+    "affiliate_url": "https://YOUR_LINK_ACTIVECAMPAIGN"
+  },
+  {
+    "name": "Unbounce",
+    "category": "AI Landing Pages & CRO",
+    "price": "$74/mo",
+    "best_for": "PPC advertisers & conversion optimizers",
+    "key_feature": "AI copywriting and Smart Traffic automatic A/B visitor routing",
+    "affiliate_url": "https://YOUR_LINK_UNBOUNCE"
   }
 ]
