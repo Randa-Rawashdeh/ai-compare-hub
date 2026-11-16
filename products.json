@@ -1,13 +1,5 @@
 [
   {
-    "name": "Gamma",
-    "category": "AI Design & Presentations",
-    "price": "$10/mo",
-    "best_for": "Consultants & pitch deck creators",
-    "key_feature": "Prompt-to-slide deck and interactive web page generator",
-    "affiliate_url": "https://YOUR_LINK_GAMMA"
-  },
-  (
     "name": "ElevenLabs",
     "category": "AI Voice & Audio",
     "price": "$5/mo",
@@ -22,77 +14,5 @@
     "best_for": "Website owners & customer support teams",
     "key_feature": "Custom GPT chatbot trained on your website data in minutes",
     "affiliate_url": "https://link.chatbase.co/randa-rawashdeh"
-  },
-  {
-    "name": "AdCreative.ai",
-    "category": "AI Design & Presentations",
-    "price": "$29/mo",
-    "best_for": "Performance marketers & e-commerce brands",
-    "key_feature": "Conversion-scored AI ad banners and social creatives",
-    "affiliate_url": "https://YOUR_LINK_ADCREATIVE"
-  },
-  {
-    "name": "Surfer SEO",
-    "category": "AI SEO & Content",
-    "price": "$99/mo",
-    "best_for": "Content agencies & affiliate publishers",
-    "key_feature": "SERP analyzer, AI visibility tracking, and NLP content scoring",
-    "affiliate_url": "https://YOUR_LINK_SURFER"
-  },
-  {
-    "name": "Browse AI",
-    "category": "AI Automation & Scraping",
-    "price": "$48/mo",
-    "best_for": "Operations & market research teams",
-    "key_feature": "No-code AI web scraping and competitor monitoring robots",
-    "affiliate_url": "https://YOUR_LINK_BROWSEAI"
-  },
-  {
-    "name": "Instantly",
-    "category": "AI Sales & Outreach",
-    "price": "$37/mo",
-    "best_for": "B2B agencies & outbound sales teams",
-    "key_feature": "Unlimited email warmup and AI-personalized cold outreach",
-    "affiliate_url": "https://YOUR_LINK_INSTANTLY"
-  },
-  {
-    "name": "SocialBee",
-    "category": "AI Social Media Management",
-    "price": "$29/mo",
-    "best_for": "Solopreneurs & social media managers",
-    "key_feature": "AI post generator with evergreen content recycling queues",
-    "affiliate_url": "https://YOUR_LINK_SOCIALBEE"
-  },
-  {
-    "name": "Kit",
-    "category": "Email & Creator Marketing",
-    "price": "$29/mo",
-    "best_for": "Newsletter creators & digital product sellers",
-    "key_feature": "Visual email automation sequences and paid newsletter engine",
-    "affiliate_url": "https://YOUR_LINK_KIT"
-  },
-  {
-    "name": "Brevo",
-    "category": "Email & Creator Marketing",
-    "price": "$9/mo",
-    "best_for": "SMBs needing email, SMS, and CRM in one",
-    "key_feature": "AI send-time optimization and multi-channel CRM workflows",
-    "affiliate_url": "https://YOUR_LINK_BREVO"
-  },
-  {
-    "name": "ActiveCampaign",
-    "category": "Email & Creator Marketing",
-    "price": "$15/mo",
-    "best_for": "E-commerce & B2B marketing automation",
-    "key_feature": "Autonomous AI marketing journeys and predictive lead scoring",
-    "affiliate_url": "https://YOUR_LINK_ACTIVECAMPAIGN"
-  },
-  {
-    "name": "Unbounce",
-    "category": "AI Landing Pages & CRO",
-    "price": "$74/mo",
-    "best_for": "PPC advertisers & conversion optimizers",
-    "key_feature": "AI copywriting and Smart Traffic automatic A/B visitor routing",
-    "affiliate_url": "https://YOUR_LINK_UNBOUNCE"
   }
 ]
