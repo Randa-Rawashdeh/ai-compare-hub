@@ -21,7 +21,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install Google GenAI SDK
-        run: pip install --upgrade google-genai
+        run: pip install -U google-genai>=3.2.0
 
       - name: Generate AI Comparison Page & Rebuild Feeds
         env:
