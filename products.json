@@ -1,5 +1,6 @@
 [
   {
+    "id": "elevenlabs",
     "name": "ElevenLabs",
     "category": "AI Voice & Audio",
     "price": "$5/mo",
@@ -8,6 +9,7 @@
     "affiliate_url": "https://try.elevenlabs.io/41c7vcbck1sy"
   },
   {
+    "id": "chatbase",
     "name": "Chatbase",
     "category": "AI Chatbots & Support",
     "price": "$19/mo",
