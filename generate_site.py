@@ -5,7 +5,8 @@ from datetime import datetime, timezone
 from google import genai
 
 SITE_URL = "https://randa-rawashdeh.github.io/ai-compare-hub"
-PINTEREST_VERIFY = "p:domain_verify"
+PINTEREST_META = '<meta name="p:domain_verify" content="20bc35d9ec47ec1cf41b51b089d363eb"/>'
+
 
 def evaluate_pair_with_decisions_api(t1: dict, t2: dict) -> dict:
     """Uses Gemini Decisions API (gemini-decision-1) with 0 output tokens to score & compare tools."""
@@ -71,6 +72,7 @@ def evaluate_pair_with_decisions_api(t1: dict, t2: dict) -> dict:
         print(f"[!] Decisions API fallback triggered: {e}")
         return fallback_scores(t1, t2)
 
+
 def fallback_scores(t1: dict, t2: dict) -> dict:
     return {
         "winner": t1["name"],
@@ -79,6 +81,7 @@ def fallback_scores(t1: dict, t2: dict) -> dict:
         "score_b": 4.6,
         "confidence_pct": 92,
     }
+
 
 def main():
     with open("products.json", "r", encoding="utf-8") as f:
@@ -108,6 +111,7 @@ def main():
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+{PINTEREST_META}
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <style>body{{font-family:system-ui,sans-serif;max-width:860px;margin:2rem auto;padding:0 1rem;color:#1e293b;line-height:1.6}}.card{{border:1px solid #e2e8f0;border-radius:12px;padding:1.5rem;margin:1rem 0;background:#f8fafc}}.btn{{display:inline-block;background:#4f46e5;color:#fff;padding:.6rem 1.2rem;border-radius:8px;text-decoration:none;font-weight:600}}</style>
@@ -143,7 +147,7 @@ def main():
     </item>""")
 
     index_html = f"""<!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><title>AI Compare Hub — B2B AI Tool Comparisons</title></head>
+<html lang="en"><head><meta charset="UTF-8">{PINTEREST_META}<title>AI Compare Hub — B2B AI Tool Comparisons</title></head>
 <body style="font-family:system-ui,sans-serif;max-width:860px;margin:2rem auto;padding:0 1rem">
 <h1>AI Compare Hub (2026)</h1>
 <p>Data-driven B2B AI software comparisons powered by Gemini Decisions API.</p>
@@ -168,6 +172,7 @@ def main():
             f.write(feed_xml)
 
     print("[OK] Generated comparisons and saved feed.xml to both root and docs/")
+
 
 if __name__ == "__main__":
     main()
