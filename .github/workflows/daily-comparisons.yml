@@ -16,12 +16,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install google-genai pydantic
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Generate comparisons and feed.xml
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: |
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          python generate_site.py
+        run: python generate_site.py
       - name: Commit and push updates
         run: |
           git config user.name "github-actions[bot]"
