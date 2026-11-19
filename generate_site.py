@@ -1,3 +1,4 @@
+import html
 import json
 import os
 import random
@@ -6,6 +7,10 @@ from google import genai
 
 SITE_URL = "https://randa-rawashdeh.github.io/ai-compare-hub"
 PINTEREST_META = '<meta name="p:domain_verify" content="20bc35d9ec47ec1cf41b51b089d363eb"/>'
+
+
+def xml_esc(text: str) -> str:
+    return html.escape(str(text), quote=True)
 
 
 def evaluate_pair_with_decisions_api(t1: dict, t2: dict) -> dict:
@@ -112,23 +117,23 @@ def main():
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 {PINTEREST_META}
-<title>{title}</title>
-<meta name="description" content="{desc}">
+<title>{xml_esc(title)}</title>
+<meta name="description" content="{xml_esc(desc)}">
 <style>body{{font-family:system-ui,sans-serif;max-width:860px;margin:2rem auto;padding:0 1rem;color:#1e293b;line-height:1.6}}.card{{border:1px solid #e2e8f0;border-radius:12px;padding:1.5rem;margin:1rem 0;background:#f8fafc}}.btn{{display:inline-block;background:#4f46e5;color:#fff;padding:.6rem 1.2rem;border-radius:8px;text-decoration:none;font-weight:600}}</style>
 </head>
 <body>
 <a href="index.html">← Back to All Comparisons</a>
-<h1>{title}</h1>
-<p><strong>AI Decision Verdict:</strong> {desc}</p>
+<h1>{xml_esc(title)}</h1>
+<p><strong>AI Decision Verdict:</strong> {xml_esc(desc)}</p>
 <div class="card">
-  <h2>{t1['name']} — Rating: {scores['score_a']}/5</h2>
-  <p>{t1.get('description', 'Enterprise-ready AI workflow solution.')}</p>
-  <a class="btn" href="{t1.get('affiliate_url', t1.get('url', '#'))}" target="_blank" rel="nofollow sponsored">Try {t1['name']} →</a>
+  <h2>{xml_esc(t1['name'])} — Rating: {scores['score_a']}/5</h2>
+  <p>{xml_esc(t1.get('description', 'Enterprise-ready AI workflow solution.'))}</p>
+  <a class="btn" href="{xml_esc(t1.get('affiliate_url', t1.get('url', '#')))}" target="_blank" rel="nofollow sponsored">Try {xml_esc(t1['name'])} →</a>
 </div>
 <div class="card">
-  <h2>{t2['name']} — Rating: {scores['score_b']}/5</h2>
-  <p>{t2.get('description', 'High-efficiency AI platform for modern teams.')}</p>
-  <a class="btn" href="{t2.get('affiliate_url', t2.get('url', '#'))}" target="_blank" rel="nofollow sponsored">Try {t2['name']} →</a>
+  <h2>{xml_esc(t2['name'])} — Rating: {scores['score_b']}/5</h2>
+  <p>{xml_esc(t2.get('description', 'High-efficiency AI platform for modern teams.'))}</p>
+  <a class="btn" href="{xml_esc(t2.get('affiliate_url', t2.get('url', '#')))}" target="_blank" rel="nofollow sponsored">Try {xml_esc(t2['name'])} →</a>
 </div>
 </body></html>"""
 
@@ -136,13 +141,13 @@ def main():
             with open(os.path.join(folder, slug), "w", encoding="utf-8") as out:
                 out.write(page_html)
 
-        links_html.append(f'<li><a href="{slug}"><strong>{title}</strong></a> — {desc}</li>')
+        links_html.append(f'<li><a href="{slug}"><strong>{xml_esc(title)}</strong></a> — {xml_esc(desc)}</li>')
         pub_date = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
         rss_items.append(f"""    <item>
-      <title>{title}</title>
+      <title>{xml_esc(title)}</title>
       <link>{SITE_URL}/{slug}</link>
       <guid>{SITE_URL}/{slug}</guid>
-      <description>{desc}</description>
+      <description>{xml_esc(desc)}</description>
       <pubDate>{pub_date}</pubDate>
     </item>""")
 
@@ -164,7 +169,6 @@ def main():
   </channel>
 </rss>"""
 
-    # Save index.html and feed.xml in BOTH root and docs/ so Make.com never gets a 404
     for folder in ["docs", "."]:
         with open(os.path.join(folder, "index.html"), "w", encoding="utf-8") as f:
             f.write(index_html)
@@ -176,5 +180,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
     
